@@ -14,6 +14,9 @@
 		C94857A62549200700C6A859 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C94857A52549200700C6A859 /* Assets.xcassets */; };
 		C94857A92549200700C6A859 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C94857A72549200700C6A859 /* LaunchScreen.storyboard */; };
 		C94857B4254928D900C6A859 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94857B3254928D900C6A859 /* AboutUsViewController.swift */; };
+		C94857BA25493C1400C6A859 /* StateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94857B925493C1400C6A859 /* StateTableViewCell.swift */; };
+		C94857BE2549418800C6A859 /* StateDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94857BD2549418800C6A859 /* StateDetailViewController.swift */; };
+		C94857C42549504700C6A859 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94857C32549504700C6A859 /* State.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		C94857A82549200700C6A859 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C94857AA2549200700C6A859 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C94857B3254928D900C6A859 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		C94857B925493C1400C6A859 /* StateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateTableViewCell.swift; sourceTree = "<group>"; };
+		C94857BD2549418800C6A859 /* StateDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateDetailViewController.swift; sourceTree = "<group>"; };
+		C94857C32549504700C6A859 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,9 @@
 				C948579C2549200600C6A859 /* AppDelegate.swift */,
 				C948579E2549200600C6A859 /* SceneDelegate.swift */,
 				C94857A02549200600C6A859 /* StatesTableViewController.swift */,
+				C94857C32549504700C6A859 /* State.swift */,
+				C94857B925493C1400C6A859 /* StateTableViewCell.swift */,
+				C94857BD2549418800C6A859 /* StateDetailViewController.swift */,
 				C94857B3254928D900C6A859 /* AboutUsViewController.swift */,
 				C94857A22549200600C6A859 /* Main.storyboard */,
 				C94857A52549200700C6A859 /* Assets.xcassets */,
@@ -142,8 +151,11 @@
 			files = (
 				C94857A12549200600C6A859 /* StatesTableViewController.swift in Sources */,
 				C948579D2549200600C6A859 /* AppDelegate.swift in Sources */,
+				C94857BA25493C1400C6A859 /* StateTableViewCell.swift in Sources */,
 				C94857B4254928D900C6A859 /* AboutUsViewController.swift in Sources */,
 				C948579F2549200600C6A859 /* SceneDelegate.swift in Sources */,
+				C94857C42549504700C6A859 /* State.swift in Sources */,
+				C94857BE2549418800C6A859 /* StateDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

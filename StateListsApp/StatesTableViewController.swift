@@ -2,9 +2,12 @@ import UIKit
 
 class StatesTableViewController: UITableViewController {
 
+    var states = [State]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        loadStateData()
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -12,17 +15,38 @@ class StatesTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return states.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "StatesCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "StatesCell", for: indexPath) as! StateTableViewCell
         
-        cell.textLabel?.text = "\(indexPath.row)"
+        //Cell 
+        cell.stateNameLabel?.text = "\(states[indexPath.row].name)"
+        cell.stateFlagImage?.image = states[indexPath.row].flag
         
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let row = tableView.indexPathForSelectedRow?.row
+        let stateDetailViewController = segue.destination as! StateDetailViewController
+        
+        let selectedState = states[row!]
+            
+        stateDetailViewController.name = selectedState.name
+        stateDetailViewController.flag = selectedState.flag
+        
+    }
+    
+    func loadStateData() {
+        
+        let state1 = State(name: "California", flag: UIImage(named: "California"), abbreviation: "CA", seal: UIImage(named: "CaliforniaSeal"), capital: "Sacramento", largestCity: "Los Angeles", population: 39.41, area: 163696)
 
+        states += [state1]
+    }
+    
 }
+
+
 
