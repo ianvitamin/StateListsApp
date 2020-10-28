@@ -1,11 +1,14 @@
 import UIKit
 
-class AboutUsTableViewController: UIViewController {
+class AboutUsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func testMessage() {
+        print("test")
+    }
+    
 }
