@@ -45,7 +45,7 @@
         <scene sceneID="DXH-aA-4TO">
             <objects>
                 <viewController id="uyl-mv-Z3n" customClass="StatesTableViewController" customModule="StateListsApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="XRI-zt-HhB" customClass="StatesTableViewController">
+                    <view key="view" contentMode="scaleToFill" id="XRI-zt-HhB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
