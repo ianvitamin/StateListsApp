@@ -17,7 +17,8 @@ class StatesTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "StatesCell", for: indexPath)
-        print("cell \(indexPath) generated")
+        
+        cell.textLabel?.text = "\(indexPath.row)"
         
         return cell
     }
