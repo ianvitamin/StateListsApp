@@ -36,14 +36,24 @@ class StatesTableViewController: UITableViewController {
             
         stateDetailViewController.name = selectedState.name
         stateDetailViewController.flag = selectedState.flag
+        stateDetailViewController.abbreviation = selectedState.abbreviation
+        stateDetailViewController.seal = selectedState.seal
+        stateDetailViewController.captial = selectedState.capital
+        stateDetailViewController.largestCity = selectedState.largestCity
+        stateDetailViewController.population = selectedState.population
+        stateDetailViewController.area = selectedState.area
         
     }
     
     func loadStateData() {
         
         let state1 = State(name: "California", flag: UIImage(named: "California"), abbreviation: "CA", seal: UIImage(named: "CaliforniaSeal"), capital: "Sacramento", largestCity: "Los Angeles", population: 39.41, area: 163696)
+        
+        let state2 = State(name: "Alabama", flag: UIImage(named: "California"), abbreviation: "CA", seal: UIImage(named: "CaliforniaSeal"), capital: "Sacramento", largestCity: "Los Angeles", population: 39.41, area: 163696)
+        
+        let state3 = State(name: "Alaska", flag: UIImage(named: "California"), abbreviation: "CA", seal: UIImage(named: "CaliforniaSeal"), capital: "Sacramento", largestCity: "Los Angeles", population: 39.41, area: 163696)
 
-        states += [state1]
+        states += [state1, state2, state3]
     }
     
 }
