@@ -49,11 +49,18 @@ class StatesTableViewController: UITableViewController {
         
         let state1 = State(name: "California", flag: UIImage(named: "California"), abbreviation: "CA", seal: UIImage(named: "CaliforniaSeal"), capital: "Sacramento", largestCity: "Los Angeles", population: 39.41, area: 163696)
         
-        let state2 = State(name: "Alabama", flag: UIImage(named: "California"), abbreviation: "CA", seal: UIImage(named: "CaliforniaSeal"), capital: "Sacramento", largestCity: "Los Angeles", population: 39.41, area: 163696)
+        let state2 = State(name: "Nevada", flag: UIImage(named: "Nevada"), abbreviation: "NV", seal: UIImage(named: "NevadaSeal"), capital: "Carson City", largestCity: "Las Vegas", population: 3.08, area: 110567)
         
-        let state3 = State(name: "Alaska", flag: UIImage(named: "California"), abbreviation: "CA", seal: UIImage(named: "CaliforniaSeal"), capital: "Sacramento", largestCity: "Los Angeles", population: 39.41, area: 163696)
+        let state3 = State(name: "Texas", flag: UIImage(named: "Texas"), abbreviation: "TX", seal: UIImage(named: "TexasSeal"), capital: "Austin", largestCity: "Houston", population: 29, area: 110567)
+        
+        let state4 = State(name: "Montana", flag: UIImage(named: "Montana"), abbreviation: "MT", seal: UIImage(named: "MontanaSeal"), capital: "Helena", largestCity: "Billings", population: 1.07, area: 147040)
+        
+        let state5 = State(name: "Florida", flag: UIImage(named: "Florida"), abbreviation: "FL", seal: UIImage(named: "FloridaSeal"), capital: "Tallahassee", largestCity: "Jacksonville", population: 21.5, area: 65755)
+        
+        let state6 = State(name: "Idaho", flag: UIImage(named: "Idaho"), abbreviation: "ID", seal: UIImage(named: "IdahoSeal"), capital: "Boise", largestCity: "Boise", population: 1.87, area: 8642)
+        
 
-        states += [state1, state2, state3]
+        states += [state1, state2, state3, state4, state5, state6]
     }
     
 }
